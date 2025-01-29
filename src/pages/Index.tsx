@@ -1,7 +1,6 @@
 import { useState } from "react";
 import ChatBubble from "@/components/ChatBubble";
 import CleoButton from "@/components/CleoButton";
-import { User } from "lucide-react";
 
 const Index = () => {
   const [step, setStep] = useState(0);
@@ -36,6 +35,15 @@ const Index = () => {
         
         {/* iPhone Screen */}
         <div className="h-full w-full overflow-y-auto rounded-[45px] bg-gradient-to-br from-white to-gray-100 p-6">
+          {/* Cleo Logo */}
+          <div className="mb-6 flex justify-center">
+            <img 
+              src="/lovable-uploads/77a2f7ef-2299-4261-92d5-733a0021405b.png" 
+              alt="Cleo" 
+              className="h-12 w-auto"
+            />
+          </div>
+
           <div className="mx-auto max-w-2xl space-y-6">
             {step === 0 && (
               <>
